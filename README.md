@@ -5,15 +5,15 @@ Better late than never, I'm doing my introduction to [Streamlit](https://streaml
 
 The objective of this repository is to help me and you get the idea of what streamlit can do, and how can we do it. Of course there are several projects way ahead of us, and you are free to search for them, but that doesn't mean we can't start now.
 
-I'll always show my references, without them would be a lot harder to progress, and that's the least that I could do.
+I'll always show my references, without them would be a lot harder to progress, and that's the least that I could do for them.
 
 ---
 
 ## But what is this?
 
-Okay, now what is streamlit? I'm still getting in it, but it would be a python framework that is really clear and simple. Doesn't need to think about front-end  or back-end. The idea is to help projects related to Machine Learning and Data Science to have a fast interactive app related to them. We want to stay simple, if we start build up, optimization will fail, and the interactive app will be not as good as you wanted.
+Okay, now what is streamlit? I'm still getting in it, but it would be a python framework that is really clear and simple. Doesn't need to think about front-end  or back-end. The idea is to help projects related to Machine Learning and Data Science to have a fast interactive app related to them. We want to stay simple, if we start building up too much, optimization will fail, and the interactive app will be not as good as you wanted.
 
-Besides that it is really nice!
+Besides that, it is really nice!
 
 ## How can we do it?
 
@@ -29,7 +29,7 @@ source .venv/bin/activate
 pip install streamlit
 ```
 
-**After making the python, we will execute with:**
+### After making the python, we will execute with...
 
 ```bash
 streamlit run filename.py
@@ -43,6 +43,6 @@ streamlit run filename.py
 * The example files will be in the directory called 'files';
 * This is a working in progress repository, probably I'll be adding more cases through the weeks, and maybe when I get satisfied, I'll start moving to my Data Science projects.
 
----;
+---
 
 And all props goes to [Eduardo Mendes](https://www.youtube.com/@Dunossauro), who does a great work with his streams! This [one](https://www.youtube.com/watch?v=Ie5ef_R_k6I&ab_channel=EduardoMendes) in particular.
