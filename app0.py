@@ -47,12 +47,15 @@ if arquivo:
         df = pd.read_csv(arquivo)
         st.dataframe(df)
         st.line_chart(df)
-    elif type_arquivo == ['application', _ ]:
+    elif type_arquivo == ['application', 'json' ]:
         st.json(loads(arquivo.read()))
     elif type_arquivo == ['text', 'x-python']:
         st.code(arquivo.read().decode())
-    elif type_arquivo == ['audio', _]:
+    elif type_arquivo == ['audio', 'mpeg']:
+        print(type_arquivo)
         st.audio(arquivo)
+    else:
+        print(type_arquivo)
 else:
     st.error('Arquivo ainda não carregado!')
 
