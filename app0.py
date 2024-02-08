@@ -52,10 +52,7 @@ if arquivo:
     elif type_arquivo == ['text', 'x-python']:
         st.code(arquivo.read().decode())
     elif type_arquivo == ['audio', 'mpeg']:
-        print(type_arquivo)
         st.audio(arquivo)
-    else:
-        print(type_arquivo)
 else:
     st.error('Arquivo ainda não carregado!')
 
