@@ -29,7 +29,7 @@ source .venv/bin/activate
 pip install streamlit
 ```
 
-Before even creating a python file we can see what streamlit can do we the next command line:
+Before even creating a python file we can see what streamlit can do with the next command line:
 
 ```bash
 streamlit hello
