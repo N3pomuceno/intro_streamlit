@@ -1,0 +1,12 @@
+streamlit
+
+# Para o aplicativo de watermark.
+Pillow
+
+# Para o aplicativo de password_manager.
+cryptography
+
+# Para o aplicativo de smart_trader.
+yfinance
+prophet
+plotly

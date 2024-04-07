@@ -37,6 +37,13 @@ streamlit hello
 
 Did you see the possibilities? It really is overwhelming and can help us do an application without thinking too much in front or backend, just do the analysis and plot the graphics or whatever you like.
 
+For the applications I'm using a few packages that requires to be installed, so just do a pip install with the requirements and we are settled to run the apps.
+
+```bash
+pip install -r requirements.txt
+```
+
+
 ### After making the python file, we will execute with...
 
 ```bash
