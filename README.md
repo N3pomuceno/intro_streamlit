@@ -29,7 +29,15 @@ source .venv/bin/activate
 pip install streamlit
 ```
 
-### After making the python, we will execute with...
+Before even creating a python file we can see what streamlit can do we the next command line:
+
+```bash
+streamlit hello
+```
+
+Did you see the possibilities? It really is overwhelming and can help us do an application without thinking too much in front or backend, just do the analysis and plot the graphics or whatever you like.
+
+### After making the python file, we will execute with...
 
 ```bash
 streamlit run filename.py
@@ -40,7 +48,7 @@ streamlit run filename.py
 ## Final points
 
 * The streamlit version will be shown inside the interactive app (maybe not my smartest idea);
-* The example files will be in the directory called 'files';
+* The example files for the apps will be in the directory called 'files';
 * This is a working in progress repository, probably I'll be adding more cases through the weeks, and maybe when I get satisfied, I'll start moving to my Data Science projects.
 
 ---
