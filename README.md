@@ -43,8 +43,9 @@ For the applications I'm using a few packages that requires to be installed, so 
 pip install -r requirements.txt
 ```
 
+The Password Manager and the Smart Trader apps I saw in Medium article that is referenced in the end of the readme. I'm not really into trading (at least for now), but I thought the idea was nice and has a nice appearance in streamlit.
 
-### After making the python file, we will execute with...
+### After creating the python file, we will execute with...
 
 ```bash
 streamlit run filename.py
@@ -61,3 +62,5 @@ streamlit run filename.py
 ---
 
 And all props goes to [Eduardo Mendes](https://www.youtube.com/@Dunossauro), who does a great work with his streams! This [one](https://www.youtube.com/watch?v=Ie5ef_R_k6I&ab_channel=EduardoMendes) in particular.
+
+And here is the Medium [article](https://medium.com/pythoneers/10-mindblowing-automation-scripts-you-need-to-try-using-python-8bd935f88125).
