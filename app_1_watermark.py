@@ -1,9 +1,11 @@
+# This app still has a problem with the font that I'm trying to solve. The 'arial.ttf' isn't working.
+
 import streamlit as st
 from PIL import Image, ImageDraw, ImageFont
 
 def text_on_image(image, text, font_size, color):
     img = Image.open(image)
-    font = ImageFont.truetype('arial.ttf', font_size)
+    font = ImageFont.truetype('arial.ttf', font=font_size)
     draw = ImageDraw.Draw(img)
     iw, ih = img.size
     fw, fh = font.getsize(text)
@@ -17,7 +19,7 @@ def text_on_image(image, text, font_size, color):
 
 image = st.file_uploader('Uma imagem!', type=['jpeg', 'jpg', 'png'])
 text = st.text_input("Sua Marca d'água")
-color = st.selectbox('Cor do fonte', ['black', 'white', 'red', 'green'])
+color = st.color_picker('Escolha uma cor:') # st.selectbox('Cor do fonte', ['black', 'white', 'red', 'green'])
 font_size = st.number_input('Tamanho da fonte', min_value=50)
 
 if image:
@@ -36,3 +38,5 @@ if image:
                 data=file,
                 mime='image/jpg'
             )
+else:
+    st.warning('Ainda não temos imagem!')
