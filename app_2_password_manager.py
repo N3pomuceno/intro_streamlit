@@ -1,10 +1,14 @@
 import streamlit as st
+import os
 import csv
 from cryptography.fernet import Fernet
 from cryptography.fernet import InvalidToken
+from dotenv import load_dotenv, find_dotenv
+
+_ = load_dotenv(find_dotenv())
 
 # Custom encryption key (hardcoded)  
-CUSTOM_ENCRYPTION_KEY = b'u7wGgNdDFefqpr_kGxb8wJf6XRVsRwvb3QgITsD5Ft4='                   ## If u are planning to use this script on a shared platform make sure to save this key in a separate secured file. 
+CUSTOM_ENCRYPTION_KEY = os.getenv("key").encode()              ## If u are planning to use this script on a shared platform make sure to save this key in a separate secured file. 
 
 # Function to encrypt password
 def encrypt_password(password):
@@ -66,7 +70,8 @@ if st.checkbox("Retrieve Password"):
                 encrypted_password = retrieve_password(website_name)
                 if encrypted_password:
                     decrypted_password = decrypt_password(encrypted_password)
-                    st.success(f"Password for **{website_name}** -> **{decrypted_password}**")
+                    st.success(f"Password for **{website_name}:**")
+                    st.code(decrypted_password)
                 else:
                     st.error("Password not found in database.")
         elif key == "":
